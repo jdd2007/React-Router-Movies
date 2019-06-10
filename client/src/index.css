@@ -14,11 +14,14 @@ body {
   cursor: pointer;
   position: relative;
   margin: 1rem auto;
+  width: 300px;
+  text-decoration: none;
 }
 
 .movie-director {
   padding: 4px 0;
   font-size: 0.8rem;
+  text-decoration: none;
 }
 
 .saved-list {
@@ -43,16 +46,19 @@ body {
 .saved-movie {
   margin: 0 10px;
 }
+
 .saved-active {
   color: blue;
   border: 1px solid grey;
   padding: 5px;
 }
+
 .save-wrapper {
   position: relative;
   width: 75%;
   margin: 1rem auto;
 }
+
 .save-button {
   position: absolute;
   top: 25px;
@@ -66,7 +72,13 @@ body {
   color: white;
 }
 
-.home-button {
+.saved-list > a {
+  color: lightskyblue;
+  text-decoration: none;
   padding: 5px 10px;
-  background-color: lightskyblue;
+}
+
+.saved-list > a.activeNavButton {
+  background-color: #4285f4;
+  color: white;
 }
